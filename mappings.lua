@@ -17,7 +17,8 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
-
+    ["K"] = { "5kzz", desc = "Move up 5 lines" },
+    ["J"] = { "5jzz", desc = "Move down 5 lines" },
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
